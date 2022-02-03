@@ -16,6 +16,7 @@ class CreateLibrosTable extends Migration
         Schema::create('libros', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->id();
+            $table->string('nombre');
 
             $table->bigInteger("categoria_id")->unsigned();
 
